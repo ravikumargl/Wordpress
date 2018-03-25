@@ -1,0 +1,32 @@
+
+.post-timeline, .sidebar-widgets-wrap, .widget_search .form-inline input{
+    text-align:right!important;
+}
+.entry-image a, ul.entry-meta, ul.entry-meta li, .entry-image, .sup_title_border, .widget-recent-post ul li, .widget-categories ul li, .widget-archive ul li, .widget ul li{
+    float: right!important;
+}
+.widget h4:before, .widget h4:after{
+    display: none;
+}
+.widget-categories ul li a, .widget-archive ul li a, .widget ul li a{
+    padding-right: 0px;
+    float: right;
+    padding-left: 10px;
+}
+.search-widget .form-inline .form-group, .widget-recent-post ul li .entery-c, .widget-recent-post ul li .entry-date{
+    float: right;
+}
+.widget-recent-post ul li .entery-c .entry-comment-no{
+    float: left;
+}
+.featured-post{
+    float: left;
+    margin-right: 0;
+    margin-left: 26px;
+}
+.search-widget .form-inline button{
+    display: none;
+}
+.search-widget .form-inline .form-control{
+    border: 1px solid #cccccc;
+}

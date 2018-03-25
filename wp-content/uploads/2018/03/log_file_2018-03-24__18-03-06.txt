@@ -1,0 +1,55 @@
+
+---Downloaded files---
+The import files for: Demo Import Speedup were successfully downloaded!
+Initial max execution time = 240
+Files info:
+Site URL = http://localhost/unitybees
+Data file = C:\wamp\www\unitybees/wp-content/uploads/2018/03/demo-content-import-file_2018-03-24__18-03-06.xml
+Widget file = C:\wamp\www\unitybees/wp-content/uploads/2018/03/demo-widgets-import-file_2018-03-24__18-03-06.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Primary Sidebar : 
+
+speedup Search - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Sidebar Other : 
+
+Categories - No Title - Imported
+Calendar - No Title - Imported
+Archives - No Title - Imported
+
+Footer One Widget Area : 
+
+Text - No Title - Imported
+
+Footer Two Widget Area : 
+
+Text - Recent Post - Imported
+
+Footer Three Widget Area : 
+
+Maps Widget - Head Office - Imported
+
+
+
+---pt-ocdi/after_import---
+

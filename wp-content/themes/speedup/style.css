@@ -1,0 +1,470 @@
+/*
+Theme Name: Speedup
+Theme URI: http://shtheme.com/demosd/speedup
+Author: FunctionThemes Team
+Author URI: http://functionthemes.com
+Description: In 2017, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: speedup
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+[Table of contents]
+
+1. Body
+2. Pre Loader / #sup_preloader_wrapper
+3. Normal Css / .sup_toppadder10
+4. Top Header / .sup_topheader
+5. Main Header / .sup_mainheader, .sup_menumain_div
+6. Dropdown Menu / .sup_menumain_div .sup_mainmenu ul.nav li ul.sub-menu
+7. Main Slider / .sup_slider
+8. Services Section / .sup_transparent
+9. Full-Width Section / .sup_fullwidth_section
+10. Button Css / .sup_btn
+11. Main-Heading Section /  .sup_heading
+12. Feature Section / .sup_mockup_img
+13. Testimonial Section /  .sup_testimonial_section
+14. Portfolio Section /  #portfolio .mix
+15. Counter Section / .sup_counter_section 
+16. Team Section / .sup_teammember
+17. Get Started Section / .sup_get_started_section
+18. Client Section / .sup_client_slider 
+19. Follow On Section / .sup_follow_on_section
+20. Footer Section / .sup_footer
+21. Copyright Section / .sup_bottom_footer
+
+-------------------------------------------------------------------*/
+
+#wp-calendar {width: 100%; }
+#wp-calendar caption { 
+    background: none repeat scroll 0 0 #E9E9E9;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center; 
+}
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th {
+    border: 1px solid #E9E9E9;
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #E9E9E9; text-align: center; padding:8px;}
+#wp-calendar tbody td#today {background: #31aae1;color: #fff;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot {border: 1px solid #E9E9E9;}
+#wp-calendar tfoot #next { font-size: 12px; text-transform: uppercase; text-align: right; color: #83c99f;}
+#wp-calendar tfoot #prev { font-size: 12px; text-transform: uppercase; padding-top: 10px; color: #83c99f;}
+
+.widget select {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text .textwidget img{max-width: 100%;height: auto;}
+.widget_text select, .widget_text input , .widget_text textarea  {max-width: 100%;padding: 5px;border: 1px solid #ccc; width: 100%;}
+.widget_text option {max-width: 100%;}
+
+.widget_nav_menu ul li, .widget_pages ul li {color: #827b7d;line-height: 28px;}
+.widget_nav_menu ul li ul, .widget_pages ul li ul {padding-left: 20px;}
+.widget_nav_menu ul li a, .widget_pages ul li a{color: #827b7d;}
+.widget_nav_menu ul li a:hover, .widget_pages ul li a:hover {color: #615C5C;}
+
+
+
+
+.wp-caption img{
+    max-width:100%;
+    margin-bottom: 10px;
+}
+.wp-caption{
+    max-width:100%;
+}
+
+
+
+.comment-reply-title {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.form-submit input.submit{
+        background: #211f20 !important;
+    display: block;
+    text-align: center;
+        position: relative;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 13px 28px 15px;
+    color: #fff;
+        transition: all 0.2s ease-out;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 15px;
+
+}
+
+.portfolio-single-content .gallery {
+    display: none;
+}
+.sup_counter_section .sup_toppadder70 {
+        padding-top: 0px !important;
+}
+
+.form-group textarea {
+    height: 150px !important;
+}
+.post-timeline nav ul.pager li a {
+    padding: 0px !important;
+        color: white;
+}
+.post-timeline nav ul.pager li a:hover{
+    padding: 0px !important;
+        color: #999999 !important;
+}
+
+.widget-latest-project ul li {
+        margin-bottom: 0px !important;
+}
+
+.tp-bannertimer {
+    background-color: rgba(255, 255, 255, 0.247059);
+        height: 7px;
+}
+
+.tp-bullets {
+    top: 91% !important;
+    transform: matrix(1, 0, 0, 1, -12, -40);
+}
+
+.sup_mainslider .bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid #31aae1;
+    border-radius: 100%;
+    background: transparent !important;
+}
+
+.sup_mainslider .bullet.selected , .sup_mainslider .bullet:hover{
+        background: #31aae1 !important;
+}
+
+
+.rev_slider .tp-caption {
+    position: absolute;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border-radius: 0 0 0 0 !important;
+    border-style: none !important;
+    border-width: 0 !important;
+    color: rgba(255,255,255,1.00) !important;
+    font-family: Raleway !important;
+    font-size: 36px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 36px !important;
+    padding: 10px 0 !important;
+    text-decoration: none !important;
+}
+
+/* add */
+.sticky , .wp-caption , .wp-caption-text ,  .screen-reader-text , .gallery-caption  , .bypostauthor , .alignright  , .alignleft  , .aligncenter{
+    
+}
+
+.alignright{
+    float:right;
+}
+.alignleft{
+    float:left;
+}
+.entry-content table , .entry table{ 
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+.entry-content table td , .entry table td {
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+} 
+ .entry-content table th, .entry table th{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+ }
+ img.alignleft, .alignleft img{
+  margin-right:10px; 
+ }
+ img.alignright, .alignright img{
+  margin-left:10px;
+ }
+ .entry-content img , .entry img{
+    max-width:100%;
+}
+
+.entry-content p {
+    float: none !important;
+}
+
+blockquote p, .entry-content blockquote p , .comment-content blockquote p{
+    float: right !important;
+    width: 90% !important;
+}
+.comment-content table{ 
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+.comment-content table td{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+} 
+.comment-content table th{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+ }
+ .comment-content li{
+  padding: 0!important;
+  list-style: inherit!important;
+   border-bottom: none !important;
+   margin-bottom: 0px !important;
+ }
+ .comment-content ul{
+  list-style: disc!important;
+  padding-left: 20px!important;
+ }
+ .comment-content ol{
+  list-style: decimal!important;
+  padding-left: 20px!important;
+ }
+
+ .comment-content blockquote , .entry blockquote {
+    margin: 50px 0px ;
+ }
+ .wp-caption.aligncenter {
+    margin: 0px auto ;
+ }
+
+ .entry .form-inline {
+    width: 40%;
+    margin-top: 40px;
+ }
+
+ .post-timeline .entry-image img{
+    width: auto!important;
+ }
+ .widget-categories ul li a, .widget-archive ul li a, .widget ul li a, .widget-recent-post ul li .entery-c .entry-date h3{
+    color: #111!important;
+ }
+ .comment-content a{
+        color: #111;
+        text-decoration: none;
+ }
+ p.logged-in-as{
+        padding-left: 15px;
+ }
+ .comment-reply-title{
+    margin-bottom: 0;
+ }
+ ol.commentlist{
+    padding-bottom: 30px;
+ }
+ .widget_archive label.screen-reader-text, .widget_categories label.screen-reader-text{
+    display: none;
+ }
+ .widget-categories ul li a, .widget-archive ul li a, .widget ul li a{
+    width: auto;
+    padding-right: 10px;
+ }
+ .wp-tag-cloud li{
+    width: auto!important;
+    padding-right: 10px;
+ }
+ .post-password-form input[type='submit']{
+        background: black;
+        border: none;
+    padding: 4px 10px;
+    color: #fff;
+    margin-left:7px;
+}
+.post-password-form label input{
+        padding: 2px 0;
+}
+.commentlist .children{
+    overflow: hidden;
+    padding-left: 8px;
+}
+
+
+#sup_menu ul li.add-menu{
+    list-style: none;
+    line-height: 80px;
+}
+#sup_menu ul li.add-menu a{
+    color: #888888;
+}
+@media(max-width: 860px){
+    .navbar-toggle {
+       top: 20px; 
+    }
+    #top-search{
+        position: relative;
+        top: -28px;
+    }
+}
+.entry-content table a{
+        color: #111;
+}
+
+.entry table a{
+    color: #111;
+}
+.entry-image {
+    width: auto;
+}
+
+.featured-post{
+    float: right;
+    margin-right: 26px;
+    font-weight: 600;
+}
+.widget_nav_menu ul.sub-menu, .widget_pages ul.children{
+    display: none;
+}
+.entry img{
+    height: auto;
+}
+.wp-tag-cloud li a{
+        padding: 4px 7px!important;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 15px!important;
+}
+h3.comment-reply-title, .comment-form .form-submit .submit{
+    margin-left: 0px!important;
+}
+.comment-form .col-md-12, .col-md-6, p.logged-in-as{
+    padding-left: 0px!important;
+}
+
+.entry-title h2 {
+    color: #111 !important;
+    font-weight: 700;
+    font-size: 30px;
+    }
+h4#comments-title, h4#comments-title2, .comment-content a.url, .comment-reply-title{
+font-weight: 600;
+}
+.entry-content h1{
+   font-size: 45px;
+}
+.entry-content h2{
+   font-size: 41px;
+}
+.entry-content h3{
+   font-size: 37px;
+}
+.entry-content h4{
+   font-size: 33px;
+}
+.entry-content h5{
+   font-size: 29px;
+}
+.entry-content h6{
+   font-size: 25px;
+}
+.widget_search .form-inline .input-group-addon, .widget_search .form-inline #top-search-close{
+    display: none;
+}
+.widget_search .form-inline input{
+    width: 100%;
+    padding:3px;
+}
+.widget_search .input-group{
+    width: 100%;
+}
+
+.comment-content h1{
+   font-size: 45px;
+}
+.comment-content h2{
+   font-size: 41px;
+}
+.comment-content h3{
+   font-size: 37px;
+}
+.comment-content h4{
+   font-size: 33px;
+}
+.comment-content h5{
+   font-size: 29px;
+}
+.comment-content h6{
+   font-size: 25px;
+}
+.comment-content a:after, .comment-content a:before{
+    display: none;
+}
+a{
+    color: #111;
+}
+@media (max-width: 767px){
+.comment-meta {
+    width: auto;
+    margin-right: 0;
+    text-align: left;
+}
+}
+
+ul.entry-meta li a{
+    font-size: 16px;
+}
+.sup_copyright p, .sup_copyright a{
+    color: #F3DFDF;
+}
+ul.entry-meta li:after{
+    display: none;
+}
+ul.entry-meta li{
+    margin-right: 15px;
+}
+.sup_menudiv .sup_right_link ul li:first-child .sup_mainmenu ul.nav{
+    position: relative;
+}
+
+.entry-image {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sup_footer, .entry-content {
+    color: #999999 !important;
+}
+ul.entry-meta li{
+    color: #999999;
+}
